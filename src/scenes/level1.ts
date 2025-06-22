@@ -82,8 +82,8 @@ export default class Level1 extends Scene {
       if (other instanceof Goal) {
         engine.goToScene('victory')
       } else if (other instanceof Obstacle) {
-        this.ui.loseLife()
         GameState.lives--
+        this.ui.lives = GameState.lives
         engine.goToScene(GameState.lives > 0 ? 'restart' : 'gameover')
       } else if (other instanceof Coin) {
         this.ui.addScore(10)
@@ -96,8 +96,8 @@ export default class Level1 extends Scene {
     this.player.on('postupdate', () => {
       if (!fallen && this.player.pos.y > engine.drawHeight + 100) {
         fallen = true
-        this.ui.loseLife()
         GameState.lives--
+        this.ui.lives = GameState.lives
         engine.goToScene(GameState.lives > 0 ? 'restart' : 'gameover')
       }
     })
