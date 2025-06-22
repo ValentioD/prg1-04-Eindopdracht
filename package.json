@@ -1,0 +1,31 @@
+{
+  "name": "eindopdracht",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValentioD/prg1-04-Eindopdracht.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValentioD/prg1-04-Eindopdracht/issues"
+  },
+  "homepage": "https://github.com/ValentioD/prg1-04-Eindopdracht#readme",
+  "dependencies": {
+    "@excaliburjs/plugin-tiled": "^0.30.2",
+    "excalibur": "^0.30.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
